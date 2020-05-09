@@ -75,6 +75,102 @@ header .menu .c-3:hover{ background: #002d44; }
     padding: 0;
 }
 
+/** PORTAFOLIO **/
+
+.portafolio{
+    background: #fff;
+    border-top: 5px solid #3da5e2;
+    padding: 0 20px;
+}
+
+.portafolio .titulo{
+    padding: 40px 0;
+    text-align: center;
+    color: #3da5e2;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.portafolio .galeria .contenedor-imagen{
+    margin-bottom: 40px;
+    max-height: 180px;
+    overflow: hidden;
+}
+
+.portafolio .galeria .contenedor-imagen a{
+    background: #3da5e2;
+    display: inline-block;
+}
+
+.portafolio .galeria .contenedor-imagen:hover img{
+    opacity: .3;
+}
+
+.portafolio .modal-dialog{
+    margin: 0px auto;
+    height: 100%;
+    max-width: 1000px;
+}
+
+.portafolio .modal-content{
+    width: auto;
+}
+
+/** Acerca De **/
+
+.acerca-de{
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.acerca-de .foto{
+    text-align: center;
+}
+
+.acerca-de .foto img{
+    margin-bottom: 30px;
+}
+
+.acerca-de .foto .nombre{
+    color: #545454;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.acerca-de .info .titulo{
+    color: #005385;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.acerca-de .info .resumen{
+    letter-spacing: 1px;
+}
+
+.acerca-de .info .label{
+    font-size: 18px;
+    font-weight: 600;
+    color: #005385;
+    margin-bottom: 10px;
+}
+
+.acerca-de .info .progress {
+    background: #005385;
+    border-radius: 0;
+    margin-bottom: 15px;
+    height: 25px;
+}
+
+.acerca-de .info .progress .progress-bar{
+    background: #3da5ea;
+    line-height: 25px;
+    text-align: left;
+    padding-left: 20px;
+}
+
 /** MEDIA QUERIES **/
 
 /*Dispositivos xl**/
@@ -97,6 +193,30 @@ header .menu .c-3:hover{ background: #002d44; }
     .menu a div {
         width: 100%;
     }
+
+    /** Portafolio **/
+
+    .portafolio .galeria .contenedor-imagen:nth-child(1){order: 1;}
+    .portafolio .galeria .contenedor-imagen:nth-child(2){order: 3;}
+    .portafolio .galeria .contenedor-imagen:nth-child(3){order: 6;}
+    .portafolio .galeria .contenedor-imagen:nth-child(4){order: 2;}
+    .portafolio .galeria .contenedor-imagen:nth-child(5){order: 5;}
+    .portafolio .galeria .contenedor-imagen:nth-child(6){order: 4;}
+    .portafolio .galeria .contenedor-imagen:nth-child(7){order: 7;}
+
+    .modal .modal-dialog{
+        width: 80%;
+    }
+
+    .modal .modal-dialog .modal-content img{
+        width: 100%;
+    }
+
+    /** Acerca De **/
+    .acerca-de .info .titulo{
+        text-align: center;
+    }
+
 }
 
 /*Dispositivos md**/
